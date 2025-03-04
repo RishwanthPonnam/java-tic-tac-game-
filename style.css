@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8F2DC; /* Keeping your background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* Adds space between grid & button */
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 boxes per row */
+    gap: 1.5vmin;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    background-color: white;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 10vmin;
+    color: #CD4631;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.reset-btn {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    background-color: #CD4631;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.reset-btn:hover {
+    background-color: #A93226;
+}
